@@ -1,0 +1,71 @@
+div{
+    height: 270px;
+    display: inline-block;
+    position: relative;
+}
+figure {
+    background: #a5a9ac; 
+    padding: 10px; 
+    width: 252px; 
+    float: left; 
+    margin: 0 10px 10px 0;
+    text-align: center;
+    color: #fff;
+    }
+.img1::before{
+    content: 'New';
+    background: #ed6767;
+    padding: 1px 10px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    transform: rotate(25deg);
+    
+}
+.img2::after{
+    content: 'New';
+    background: #ed6767;
+    padding: 1px 10px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transform: rotate(-25deg);
+}
+.img3::before{
+    content: 'New';
+    background: #ed6767;
+    padding: 1px 10px;
+    position: absolute;
+    top: 225px;
+    right: 0px;
+    transform: rotate(-25deg);
+    display: inline-block;
+}
+.img4::after{
+    content: 'New';
+    background: #ed6767;
+    padding: 1px 10px;
+    position: absolute;
+    top: 225px;
+    left: 0;
+    transform: rotate(25deg);
+}
+.image{
+    position: relative;
+    width: 250px;
+    height: auto;
+} 
+.block{
+    
+    position: absolute;
+    height: auto;
+    background: #bfd3d8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.image:hover .block{
+    display: none;
+}
